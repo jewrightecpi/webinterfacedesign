@@ -22,7 +22,7 @@ header {
     /* Change the font size and weight */
     font-size: 1.5rem;
     font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
 }
 
 /* --- Navigation Menu --- */
@@ -69,11 +69,11 @@ section {
     /* Use borders, box shadows, or background colors to distinguish content areas */
     border-radius: 8px;
     border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);*/
 }
 
 h2 {
-    color: #005f73;
+    /*color: #005f73;*/
     border-bottom: 2px solid #007f5f;
     padding-bottom: 10px;
 }
@@ -81,8 +81,8 @@ h2 {
 /* --- Footer --- */
 footer {
     /* Use a contrasting background and text color */
-    background-color: #333;
-    color: #eee;
+    /*background-color: #333;
+    color: #eee;*/
     padding: 15px 0;
     /* Align text to the center */
     text-align: center;
