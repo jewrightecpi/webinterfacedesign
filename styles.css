@@ -94,3 +94,57 @@ img {
   max-width: 100%; /* Ensures the image scales down to fit its container */
   height: auto;    /* Automatically adjusts the height to maintain aspect ratio */
 }
+/********************************** use flexbox ***************************/
+.main-content-area {
+    display: flex; /* Enable Flexbox for the main content area */
+    flex-direction: column; /* Stacks items vertically on mobile first */
+    gap: 2rem; /* Space between main content sections (e.g., article and sidebar) */
+}
+
+.main-content-area > * {
+    flex: 1; /* Ensures sections can grow if needed on larger screens */
+}
+
+/* --- Contact Form Styling (Flexbox, Transitions, Effects) --- */
+.contact-form {
+    display: flex; /* Enable Flexbox for the form container */
+    flex-direction: column; /* Stacks form elements vertically */
+    gap: 1rem; /* Space between form fields and button */
+    background: white;
+    padding: 2rem;
+
+border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+
+/**************************************************************** implement media queries*********************************/
+/* Desktop display (min-width: 769px) */
+@media (min-width: 769px) {
+    /* General container width adjustment for large screens */
+    .container {
+        padding: 0;
+    }
+
+    /* Further refine flex behavior for desktop */
+    .main-content-area article {
+        flex: 2; /* Main article takes up more space */
+    }
+
+    .main-content-area aside {
+        flex: 1; /* Sidebar takes less space */
+    }
+}
+/* Tablet display (min-width: 481px) */
+@media (min-width: 481px) {
+    nav.main-nav {
+        flex-direction: row; /* Horizontal navigation on tablets and up */
+        justify-content: space-around; /* Distribute links evenly */
+    }
+
+    .main-content-area {
+        flex-direction: row; /* Side-by-side layout for main content and sidebar */
+    }
+}
