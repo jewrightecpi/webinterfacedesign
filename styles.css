@@ -90,14 +90,16 @@ footer {
     font-size: 0.8rem;
     margin-top: 40px;
 }
-img {
-  max-width: 100%; /* Ensures the image scales down to fit its container */
-  height: auto;    /* Automatically adjusts the height to maintain aspect ratio */
-}
+/*img {
+  max-width: 100%; 
+  height: auto;    
+}*/
 /* render the images horizontally but wrap to next line *****/
 .image-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    flex-grow: 3;
 }
 /********************************** use flexbox ***************************/
 .main-content-area {
