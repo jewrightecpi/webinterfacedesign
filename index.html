@@ -82,8 +82,36 @@
     </section> 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact</h2>
-            <p> <a href="mailto:jenwrightphotography@gmail.com">Send Inquiry</a></p>
+            <h2>Send Inquiry</h2>
+            <p> <div id="contact">
+    <h2>Send Inquiry</h2>
+    <p>Please fill out the form below.</p>
+    
+    <!-- The form tag with a placeholder action URL -->
+    <form action="/submit_contact_form" method="POST">
+        
+        <!-- Sender Name Field -->
+        <label for="senderName">Name:</label>
+        <input type="text" id="senderName" name="senderName" required>
+        
+        <!-- Email Address Field -->
+        <label for="emailAddress">Email Address:</label>
+        <input type="email" id="emailAddress" name="emailAddress" required>
+        
+        <!-- Subject Field -->
+        <label for="subjectLine">Subject:</label>
+        <input type="text" id="subjectLine" name="subjectLine">
+        
+        <!-- Message Field (Textarea) -->
+        <label for="messageBody">Message:</label>
+        <textarea id="messageBody" name="messageBody" rows="5"></textarea>
+        
+        <!-- Submit Button -->
+        <button type="submit">Send Inquiry</button>
+        
+    </form>
+</div>
+</p>
         </section>
 
     </main>
@@ -91,11 +119,13 @@
     <!-- Footer Section -->
     <footer>
         <!-- This is the footer section -->
-        <p>&copy; December 12, 2025</p>
+        <p>&copy; Jen Wright Photography, LLC, January 1, 2014-2026</p>
+        <p><a href="mailto:jenwrightphotography@gmail.com">E-mail us</a></p>
     </footer>
 
 </body>
 </html>
+
 
 
 
