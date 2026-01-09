@@ -94,6 +94,11 @@ img {
   max-width: 100%; /* Ensures the image scales down to fit its container */
   height: auto;    /* Automatically adjusts the height to maintain aspect ratio */
 }
+/* render the images horizontally but wrap to next line *****/
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 /********************************** use flexbox ***************************/
 .main-content-area {
     display: flex; /* Enable Flexbox for the main content area */
