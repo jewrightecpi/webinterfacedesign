@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
     // ... other sanitization and validation ...
 
-    $to = "your-email@example.com"; // Change this to your email
+    $to = "jennievg@yahoo.com"; // Change this to your email
     $headers = "From: " . $name . " <" . $email . ">\r\n";
     // ... other headers ...
 
